@@ -1,0 +1,12 @@
+<% 5.times do |row| %>
+  <% 5.times do |col| %> 
+    <div class="square">
+      <div class="content">
+        <div class="table">
+          <div class="table-cell" id="<%= row+1 %>:<%= col+1 %>" onclick="javascript:highlight(this.id);">
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+<% end %>
