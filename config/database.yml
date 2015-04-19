@@ -1,0 +1,14 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: devops_bingo
+
+production:
+  <<: *default
+  database: devops_bingo_production
+  username: dbuser
+  password: dbuser
