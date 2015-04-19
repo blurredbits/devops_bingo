@@ -10,5 +10,3 @@ development:
 production:
   <<: *default
   database: devops_bingo_production
-  username: dbuser
-  password: dbuser
