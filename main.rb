@@ -6,12 +6,8 @@ class Player < ActiveRecord::Base
 end
 
 get '/' do
-  erb :home
-end
-
-get '/players/new' do
   @player = Player.new
-  erb :new_player
+  erb :'players/new'
 end
 
 post '/players' do
@@ -19,10 +15,16 @@ post '/players' do
   if @player.save
     erb :home
   else
-    erb :new_player
+    erb :'players/new'
   end
 end
 
 get '/admin/players' do
   @players = Player.all
+  erb :'players/index'
+end
+
+get '/admin/players/:id' do
+  @player = Player.find(params[:id])
+  erb :'players/show'
 end

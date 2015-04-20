@@ -1,0 +1,7 @@
+<table>
+  <% @players.each do |player| %>
+    <tr>
+      <td><a href="/admin/players/<%= player.id %>"><%= player.first_name %> <%= player.last_name %></td>
+    </tr>
+  <% end %>
+</table>
