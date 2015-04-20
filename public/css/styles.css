@@ -1,7 +1,12 @@
 body {
-  background: #c0c0c0;
-  text-align: center;
+  background: #fff;
+  font-family: 'Lato', sans-serif;
 }
+
+.signup {
+}
+
+
 
 .square {
   float: left;

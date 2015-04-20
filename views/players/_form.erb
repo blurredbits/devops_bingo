@@ -1,8 +1,14 @@
-<label>First Name:</label>
-<input type="text" name="player[first_name]" value="<%= @player.first_name %>"><br>
+<div class="form-group">
+  <label for="firstName">First Name:</label><br>
+  <input type="text" class="form-control" id="firstName" name="player[first_name]" value="<%= @player.first_name %>" placeholder="Enter first name">
+</div>
 
-<label>Last Name:</label>
-<input type="text" name="player[last_name]" value="<%= @player.last_name %>"><br>
+<div class="form-group">
+  <label for="lastName">Last Name:</label><br>
+  <input type="text" class="form-control" id="lastName" name="player[last_name]" value="<%= @player.last_name %>" placeholder="Enter last name">
+</div>
 
-<label>Email:</label>
-<input type="text" name="player[email]" value="<%= @player.email %>"><br>
+<div class="form-group">
+  <label>Email:</label><br>
+  <input type="email" class="form-control" name="player[email]" value="<%= @player.email %>" placeholder="Enter email address">
+</div>

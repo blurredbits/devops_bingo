@@ -1,7 +1,12 @@
-<h1>Welcome To DevOps Bingo!</h1>
+<div class="container">
+  <h1>Welcome To DevOps Bingo!</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <form class="signup" method="POST" action="/players">
+        <%= erb :'players/_form' %>
 
-<form method="POST" action="/players">
-  <%= erb :'players/_form' %>
-
-  <input type="submit" value="Submit!">
-</form>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
