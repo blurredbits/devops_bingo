@@ -1,8 +1,9 @@
 source 'https://rubygems.org'
 
-ruby '2.2.0'
+ruby "2.2.1"
 
-gem 'pg'
+gem "pg"
 gem "sinatra"
 gem "sinatra-activerecord"
 gem "rake"
+gem "scoutd"
