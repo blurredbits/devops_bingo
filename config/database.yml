@@ -6,8 +6,6 @@ default: &default
 development:
   <<: *default
   database: devops_bingo
-  user: postgres
-  password: postgres
 
 production:
   <<: *default
