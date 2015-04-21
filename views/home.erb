@@ -1,9 +1,17 @@
+<link rel="stylesheet" href="css/board.css">
+<div id="header">
+    <a href="https://scoutapp.com" target="_blank"><img src="/images/scout_high_res_on_dark.png"/></a>
+  <span>DevOpsDays Rockies Bingo</span>
+</div>
 <% 5.times do |row| %>
   <% 5.times do |col| %> 
-    <div class="square">
+    <div class="square <%= 'free' if row==2 and col==2 %>" onclick="javascript:highlight($(this));">
       <div class="content">
         <div class="table">
-          <div class="table-cell" id="<%= row+1 %>:<%= col+1 %>" onclick="javascript:highlight(this.id);">
+          <div class="table-cell" id="<%= row+1 %>:<%= col+1 %>">
+            <% if row==2 and col==2 %>
+              <img src="/images/devops-days-rockies.png"/>
+            <% end %>
           </div>
         </div>
       </div>

@@ -1,9 +1,44 @@
 body {
-  background: #fff;
   font-family: 'Lato', sans-serif;
 }
 
+/** players/new **/
+
+.container {
+  max-width: 500px;
+  margin-top: 50px;
+}
+
+#signup_logo {
+  float: right;
+  max-width: 150px;
+}
+
+.container h1 {
+  margin-bottom: 30px;
+}
+
 .signup {
+  width: 300px;
+  float: left;
+}
+
+#header {
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+#header span {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+#header a {
+  float: right;
+}
+
+#header img {
+  height: 30px;
 }
 
 
@@ -15,14 +50,46 @@ body {
   padding-bottom: 18%;
   margin:0.90%;
   overflow:hidden;
+  /*background: #fff;*/
+  color: #efefef;
+  border: 1px solid #666;
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+
+.square.free {
   background: #fff;
+}
+
+.square.free:hover {
+  cursor: inherit;
+}
+
+.square.free.selected {
+  background: #fff;
+}
+
+.square.selected {
+  background: #0099ff;
+}
+
+.square:hover {
+    cursor: pointer;
+}
+
+.square:hover:not(.selected) {
+  background: #000;
+}
+
+.square img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .content {
   position: absolute;
   height: 90%;
-  width: 90%;
-  padding: 5% 5%;
+  width: 100%;
 }
 
 .table {
@@ -37,4 +104,52 @@ body {
   vertical-align: middle;
   height: 100%;
   width: 100%;
+  text-align: center;
+  font-size: 16px;
 }
+
+/******** media queries **********/
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin-top: 0;
+  }
+
+  #signup_logo {
+    float: none;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .container h1 {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .signup {
+    width: 100%;
+  }
+
+  #header {
+    font-size: 16px;
+  }
+
+  #header span {
+    margin-top: 2px;
+  }
+
+  #header {
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  #header img {
+    height: 20px;
+  }
+
+  .table-cell {
+    font-size: 12px;
+  }

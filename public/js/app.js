@@ -13,10 +13,27 @@ is = new VER5_Check();
 var jargonSelect = new Array(); 
 var c2=0;
  
-function highlight(myId) {
+function highlight($el) {
+    myId = $el.find(".table-cell").attr("id");
+  // don't allow toggling of free square
+  if ($el.hasClass("free") && $el.hasClass("selected")) {
+    return;
+  }
+  else if ($el.hasClass("selected")) {
+    // already selected..remove
+    $el.removeClass("selected");
+    jargonSelect = jQuery.grep(jargonSelect, function(value) {
+        return value != myId;
+    });
+    c2--;
+    console.log(jargonSelect)
+    return;
+  }
+    $el.addClass("selected");
   var myCell = document.getElementById(myId);
-  myCell.style.backgroundColor = "\#00ffc0";
+  // myCell.style.backgroundColor = "\#00ffc0";
   jargonSelect[c2]=myId;
+  console.log(jargonSelect)
   if(jargonSelect.length>=5){
  
     //alert("check to see if its a winner");
@@ -226,6 +243,8 @@ function randArray() {
 /*Called on page load*/
  
 function loadJargon() {
+    // only load if displaying the board
+    if ($('.square').length == 0) return;
     randArray();
     count=0;
     for(i = 1; i < 6; ++i) {
@@ -236,4 +255,6 @@ function loadJargon() {
             count++;
         }
     }
+    // select the free square
+    highlight($(".square.free"))
 }
