@@ -10,10 +10,14 @@ get '/' do
   erb :'players/new'
 end
 
+get '/card' do
+  erb :home
+end
+
 post '/players' do
   @player = Player.new(params[:player])
   if @player.save
-    erb :home
+    redirect '/card'
   else
     erb :'players/new'
   end
