@@ -12,10 +12,15 @@ body {
 #signup_logo {
   float: right;
   max-width: 150px;
+  border: 1px solid #fff;
+  border-radius: 3px;
 }
 
 .container h1 {
   margin-bottom: 30px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 10px
 }
 
 .signup {
@@ -103,7 +108,8 @@ body {
 @media only screen and (max-width: 768px) {
   .container {
     width: 90%;
-    margin-top: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 
   #signup_logo {
@@ -116,6 +122,7 @@ body {
     margin-top: 10px;
     font-size: 20px;
     text-align: center;
+    letter-spacing: 5px;
   }
 
   .signup {

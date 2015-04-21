@@ -1,5 +1,5 @@
 <div class="container">
-  <h1>Welcome to DevOps Bingo!</h1>
+  <h1>DevOps Bingo</h1>
 	<img id="signup_logo" src="/images/devops-days-rockies.png"/>
   <form class="signup" method="POST" action="/players">
     <%= erb :'players/_form' %>
@@ -11,3 +11,11 @@
 <script type="text/javascript">
 	$("#firstName").focus();
 </script>
+
+<style type="text/css">
+
+	body {
+		background: url(/images/bingo_back.png);
+		background-size: cover;
+	}
+</style>
