@@ -76,7 +76,7 @@ function highlight($el) {
             diagCount++;
             if(diagonal.length==5){
                 alert("BINGO");
-                document.location.reload(1);
+               window.location = window.location.origin + "/card"
             }
         }
  
@@ -85,7 +85,7 @@ function highlight($el) {
             diag2Count++;
             if(diagonal2.length==5){
                 alert("BINGO");
-                document.location.reload(1);
+               window.location = window.location.origin + "/card"
             }
         }
  
@@ -96,7 +96,7 @@ function highlight($el) {
             colCount++;
             if(column.length==5){
                 alert("BINGO");
-                document.location.reload(1);
+               window.location = window.location.origin + "/card"
             }
         }
  
@@ -105,7 +105,7 @@ function highlight($el) {
             col2Count++;
             if(column2.length==5){
                 alert("BINGO");
-                document.location.reload(1);
+               window.location = window.location.origin + "/card"
             }
         }
  
@@ -114,7 +114,7 @@ function highlight($el) {
             col3Count++;
             if(column3.length==5){
                 alert("BINGO");
-                document.location.reload(1);
+               window.location = window.location.origin + "/card"
             }
         }
  
@@ -123,7 +123,7 @@ function highlight($el) {
             col4Count++;
             if(column4.length==5){
                 alert("BINGO");
-                document.location.reload(1);
+               window.location = window.location.origin + "/card"
             }
         }
  
@@ -132,7 +132,7 @@ function highlight($el) {
             col5Count++;
             if(column5.length==5){
                 alert("BINGO");
-                document.location.reload(1);
+               window.location = window.location.origin + "/card"
             }
         }
 
@@ -143,7 +143,7 @@ function highlight($el) {
             rowCount++;
             if(row.length==5){
                 alert("BINGO");
-                document.location.reload(1);
+               window.location = window.location.origin + "/card"
             }
         }
  
@@ -152,7 +152,7 @@ function highlight($el) {
             row2Count++;
             if(row2.length==5){
                 alert("BINGO");
-                document.location.reload(1);
+               window.location = window.location.origin + "/card"
             }
         }
  
@@ -161,7 +161,7 @@ function highlight($el) {
             row3Count++;
             if(row3.length==5){
                 alert("BINGO");
-                document.location.reload(1);
+               window.location = window.location.origin + "/card"
             }
         }
  
@@ -170,7 +170,7 @@ function highlight($el) {
             row4Count++;
             if(row4.length==5){
                 alert("BINGO");
-                document.location.reload(1);
+               window.location = window.location.origin + "/card"
             }
         }
  
@@ -179,7 +179,7 @@ function highlight($el) {
             row5Count++;
             if(row5.length==5){
                 alert("BINGO");
-                document.location.reload(1);
+               window.location = window.location.origin + "/card"
             }
         }
     }
