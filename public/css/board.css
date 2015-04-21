@@ -43,6 +43,11 @@ body {
   margin-top: 5px;
 }
 
+#index {
+  align: center;
+  padding-top: 20px;
+}
+
 /******** media queries **********/
 
 @media only screen and (max-width: 768px) {

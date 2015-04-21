@@ -1,7 +1,24 @@
-<table>
-  <% @players.each do |player| %>
-    <tr>
-      <td><a href="/admin/players/<%= player.id %>"><%= player.first_name %> <%= player.last_name %></td>
-    </tr>
-  <% end %>
-</table>
+<link rel="stylesheet" href="/css/board.css">
+<div id="top">
+  <div class="bar"></div>
+      <a href="https://scoutapp.com" target="_blank"><img src="/images/scout_high_res_on_dark.png"/></a>
+</div>
+<div class="container">
+  <div class="row">
+      <div id="index">
+        <table class="table table-bordered">
+          <% @players.each do |player| %>
+            <tr>
+              <td><%= player.first_name %></td>
+              <td><%= player.email%></td>
+              <td>
+                <form action="/bingotastic/players/<%= player.id %>" method="POST">
+                <input type="hidden" name="_method" value="DELETE">
+                <button type="submit" class="btn btn-default btn-primary">Delete</button>
+              </td>
+            </tr>
+          <% end %>
+        </table>
+      </div>
+  </div>
+</div>

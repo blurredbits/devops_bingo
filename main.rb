@@ -23,12 +23,23 @@ post '/players' do
   end
 end
 
-get '/admin/players' do
+get '/bingotastic/players' do
   @players = Player.all
   erb :'players/index'
 end
 
-get '/admin/players/:id' do
+get '/bingotastic/players/:id' do
   @player = Player.find(params[:id])
   erb :'players/show'
+end
+
+get '/bingotastic/pickawinner' do
+  @winner = Player.all.sample
+  erb :'players/winner'
+end
+
+delete '/bingotastic/players/:id' do
+  @player = Player.find(params[:id])
+  @player.destroy
+  redirect '/bingotastic/players'
 end
