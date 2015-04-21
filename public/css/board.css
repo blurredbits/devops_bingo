@@ -3,3 +3,74 @@ body {
   font-family: 'Lato', sans-serif;
   color: #efefef;
 }
+
+#top {
+	margin-top: 20px;
+	text-align: center;
+	position: relative;
+	width: 100%;
+}
+
+#top .bar {
+	position: absolute;
+	width: 100%;
+	top: 14px;
+	height: 5px;
+	background: #1787B7;
+	z-index: -1;
+}
+
+#top a {
+	background: #333;
+	padding: 0px 20px;
+}
+
+#top img {
+  height: 30px;
+}
+
+#header {
+  padding: 10px 20px;
+  font-size: 60px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 13px;
+  text-align: center;
+}
+
+#header span {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+/******** media queries **********/
+
+@media only screen and (max-width: 768px) {
+	body {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+  #header {
+    font-size: 25px;
+    letter-spacing: 7px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #top {
+  	margin-top: 10px;
+  }
+
+  #top img {
+  	height: 20px;
+  }
+
+  #top .bar {
+  	top: 10px;
+  }
+
+  .square {
+  	margin: 1%;
+  }
+}

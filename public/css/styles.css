@@ -23,23 +23,6 @@ body {
   float: left;
 }
 
-#header {
-  padding: 10px 20px;
-  font-size: 20px;
-}
-
-#header span {
-  display: inline-block;
-  margin-top: 5px;
-}
-
-#header a {
-  float: right;
-}
-
-#header img {
-  height: 30px;
-}
 
 
 
@@ -55,6 +38,8 @@ body {
   border: 1px solid #666;
   border-radius: 2px;
   transition: all 0.2s;
+  border-bottom-color: #000;
+  text-transform: uppercase;
 }
 
 .square.free {
@@ -70,7 +55,7 @@ body {
 }
 
 .square.selected {
-  background: #0099ff;
+  background: #1787B7;
 }
 
 .square:hover {
@@ -99,7 +84,7 @@ body {
 }
 
 .table-cell {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   display: table-cell;
   vertical-align: middle;
   height: 100%;
