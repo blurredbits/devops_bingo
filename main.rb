@@ -14,6 +14,10 @@ get '/card' do
   erb :home
 end
 
+get '/claim' do
+  erb :'players/bingo'
+end
+
 post '/players' do
   @player = Player.new(params[:player])
   if @player.save
